@@ -27,7 +27,7 @@ function deepestChild() {
   let current = document.getElementById('grand-node');
   let next = [];
   while (current || current === 0) {
-    let c = 0;
+    var c = 0;
     if (Array.isArray(current)) {
       for (let i = 0; i < current.length; i++) {
         next.push(current[i]);
