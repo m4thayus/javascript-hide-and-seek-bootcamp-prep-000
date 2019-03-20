@@ -24,7 +24,7 @@ function increaseRankBy(n) {
 }
 
 function deepestNode() {
-  let current = document.getElementById('nested');
+  let current = document.getElementById('grand-node');
   let next = [];
   while (current || current === 0) {
     if (current.querySelector('div.target')) {
