@@ -23,7 +23,7 @@ function increaseRankBy(n) {
   
 }
 
-function nestedTarget() {
+function deepestNode() {
   let current = document.getElementById('nested');
   let next = [];
   while (current || current === 0) {
