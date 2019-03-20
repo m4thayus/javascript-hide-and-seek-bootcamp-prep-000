@@ -19,3 +19,4 @@ function nestedTarget() {
   return null;
 }
 
+increaseRank
