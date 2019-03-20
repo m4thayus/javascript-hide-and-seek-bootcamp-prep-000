@@ -27,8 +27,8 @@ function deepestNode() {
   let current = document.getElementById('grand-node');
   let next = [];
   while (current || current === 0) {
-    if (current.querySelector('div.target')) {
-      return current.querySelector('div.target');
+    if (current.innerHTML) {
+      return current.innerHTML;
     }
     if (Array.isArray(current)) {
       for (let i = 0; i < current.length; i++) {
