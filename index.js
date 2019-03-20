@@ -26,19 +26,17 @@ function increaseRankBy(n) {
 function deepestChild() {
   let current = document.getElementById('grand-node');
   let next = [];
-  console.log(current);
   while (current || current === 0) {
-    if (current.innerHTML) {
-      return current.innerHTML;
-    }
+    let c = 0;
     if (Array.isArray(current)) {
       for (let i = 0; i < current.length; i++) {
         next.push(current[i]);
       }
     }
     current = next.shift();
+    c++;
   }
-  return null;
+  return c;
 }
 
 deepestChild();
