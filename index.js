@@ -40,3 +40,5 @@ function deepestChild() {
   }
   return null;
 }
+
+deepestChild();
